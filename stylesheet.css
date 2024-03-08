@@ -1,0 +1,112 @@
+body {
+  background-color: #1e1e1e;
+}
+
+/* @keyframes timepass {
+   0% {border-color: red;}
+   25%{border-color: blue;}
+   50%{border-color: green;}
+   75%{border-color: purple;}
+   100%{border-color: hotpink;}
+   
+ } */
+
+#get {
+  color: green;
+}
+
+#post {
+  color: yellow;
+}
+
+#put {
+  color: skyblue;
+}
+
+#patch {
+  color: plum;
+}
+
+#delete {
+  color: salmon;
+}
+
+#head {
+  color: green;
+}
+
+#options {
+  color: darkmagenta;
+}
+
+#output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #5bc0de;
+  color: aliceblue;
+  margin: 5px;
+  padding: 5px;
+  /* animation-name: timepass;
+   animation-iteration-count: infinite;
+   animation-duration: 2s; */
+}
+
+.car {
+  background-image: url(car-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17rem;
+  height: 4.699rem;
+  position: absolute;
+  bottom: 77px;
+  left: 396px;
+}
+
+/* Wheel's Styling and positioning */
+.wheel {
+  position: absolute;
+  animation: wheelanimation linear 0.6s infinite;
+}
+.wheel1 {
+  background-image: url(wheel1-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 49px;
+  bottom: 71px;
+  left: 570px;
+}
+.wheel2 {
+  background-image: url(wheel2-removebg-preview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 44px;
+  bottom: 77px;
+  left: 433px;
+}
+
+/* Rotation of the wheels */
+@keyframes wheelanimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Moving the track backwards */
+@keyframes trackanimation {
+  100% {
+    transform: translate(-500vw);
+  }
+}
+
+.track{
+   background-image: url(track.jpeg);
+   background-repeat: repeat-x;
+   position: absolute;
+   bottom: 0px;
+   width: 1000vw;
+   height: 20vh;
+   animation: trackanimation 6s linear infinite;
+}
